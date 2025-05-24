@@ -1,0 +1,150 @@
+/* General Reset */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color:rgb(105, 93, 33); /* very soft yellow background */
+    color: #333; /* dark gray text for readability */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background: #f6d365; /* pastel yellow for sidebar */
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transition: 0.3s;
+    z-index: 1;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-title {
+    background: #f6c90e; /* deeper yellow for sidebar title */
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Sidebar Menu */
+.sidebar ul {
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    list-style: none;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 20px;
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color:rgb(127, 124, 109); /* lighter yellow on hover */
+    border-left: 5px solid #fff;
+}
+
+/* Main Section */
+.section {
+    margin-left: 200px;
+    padding: 20px;
+    transition: 0.3s;
+    background-color: #ffffff;
+    min-height: 100vh;
+}
+
+/* Headings */
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f6c90e; /* bold yellow for headings */
+}
+
+/* Links */
+a {
+    color: #f6c90e;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Form Styling */
+form {
+    max-width: 480px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(246, 211, 101, 0.2);
+}
+
+/* Table Styling */
+.table1 {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(246, 211, 101, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.table1 th {
+    background: #f6d365; /* pastel yellow for table header */
+    color: #333;
+    padding: 12px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.table1 td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #fbeec1;
+    color: #444;
+}
+
+.table1 tr:hover {
+    background-color: #fff9d6; /* soft yellow hover effect */
+}
+
+.table1 tr:nth-child(even) {
+    background-color: #fffef3; /* alternating row with very light yellow */
+}
+
+/* Responsive for Small Screens */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .section {
+        margin-left: 0;
+    }
+
+    .table1 td, .table1 th {
+        font-size: 14px;
+    }
+}
+
+.small-fieldset {
+  width: 100px;       /* Atur lebar sesuai kebutuhan */
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fffbea;
+}
